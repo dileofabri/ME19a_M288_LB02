@@ -1,0 +1,15 @@
+body {
+    margin: 0px;
+}
+
+h1 {
+    font-family: ".SF NS", Helvetica;
+    font-size: 100px;
+}
+
+.first {
+    text-align: center;
+    height: auto;
+    width: auto;
+    padding: 50px;
+}
