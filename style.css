@@ -1,15 +1,92 @@
 body {
     margin: 0px;
+    /* background-color: #333; */
+    background-color: #fff;
 }
 
-h1 {
+h1, h2, h3, h4, p, a, label {
     font-family: ".SF NS", Helvetica;
-    font-size: 100px;
+    color: #222;
 }
 
-.first {
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #eee;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.sidenav h1 {
+    padding: 6px 8px 6px 16px;
+    display: block;
+}
+
+.sidenav a {
+    padding: 12px 8px 12px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #111;
+    display: block;
+}
+
+.sidenav a:hover {
+    background-color: #fff;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #fff;
+    color: white;
+}
+
+.main {
+    margin-left: 200px;
     text-align: center;
     height: auto;
     width: auto;
+    padding: 28px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.insert {
+    padding: 20px 0px 65px 0px;
+    border: 3px dotted #eee;
+}
+
+.insert .input-public-address {
+    width: 500px;
+    height: 30px;
+    border: 2px solid #ddd;
+}
+
+form button {
+    height: 80px;
+    height: 36px;
+    border: 2px solid #ddd;
+    cursor: pointer;
+}
+
+.balance-viewer {
+    height: 100px;
+    margin-top: 50px;
     padding: 50px;
+    border: 3px dotted #eee;
 }

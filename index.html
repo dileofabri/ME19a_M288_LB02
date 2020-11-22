@@ -6,9 +6,32 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div class="first">
-        <h1>Es ist</h1>
-        <h1 id="info"> .</h1>
+    <!-- Side navigation -->
+    <div class="sidenav">
+        <h1>Genesis</h1>
+        <a href="index.html" class="btn active">Portfolio</a>
+        <a href="address-generator.html" class="btn">Address Generator</a>
+        <a href="about.html" class="btn">About</a>
+        <a href="contact.html" class="btn">Contact</a>
     </div>
+
+    <!-- Page content -->
+    <div class="main">
+        <h1>Portfolio</h1>
+        <div class="insert">
+            <br>
+            <form name="form1" action="#" onsubmit="getBalance()">
+                <label for="public-address">Insert your public address below.</label><br><br>
+                <input class="input-public-address" type="text" id="public-address" name="public-address">
+                <button onclick="getBalance()">Submit</button>
+            </form>
+        </div>
+        <div class="balance-viewer">
+            <h2>Balance</h2>
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
