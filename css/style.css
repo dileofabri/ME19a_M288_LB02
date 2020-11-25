@@ -71,7 +71,7 @@ h1, h2, h3, h4, p, a, label {
     border: 3px dotted #eee;
 }
 
-.insert .input-address {
+.insert .input-location {
     width: 500px;
     height: 30px;
     border: 2px solid #ddd;

@@ -9,28 +9,21 @@
     <!-- Side navigation -->
     <div class="sidenav">
         <h1>Genesis</h1>
-        <a href="index.html" class="btn active">Portfolio</a>
+        <a href="index.html" class="btn active">Home</a>
         <a href="address-generator.html" class="btn">Address Generator</a>
         <a href="about.html" class="btn">About</a>
         <a href="contact.html" class="btn">Contact</a>
     </div>
 
     <!-- Page content -->
-    <div class="main">
-        <h1>Portfolio</h1>
-        <div class="insert">
-            <br>
-            <form name="form1" action="#" onsubmit="getBalance()">
-                <label for="address">Insert your public address below.</label><br><br>
-                <input class="input-address" type="text" id="address" name="address">
-                <button onclick="getBalance()">Submit</button>
+    <section class="main" id="main">
+        <div class="container">
+            <form class="color-picker">
+                <input type="text" placeholder="Enter a color." id="input">
+                <button onclick="setColor()">Color it!</button>
             </form>
         </div>
-        <div class="balance-viewer">
-            <h2>Balance</h2>
-            <p id="result"></p>
-        </div>
-    </div>
+    </section>
 
     <script src="js/script.js"></script>
 </body>
