@@ -1,11 +1,11 @@
 body {
-    margin: 0px;
+    margin: 0;
     /* background-color: #333; */
     background-color: #fff;
 }
 
 h1, h2, h3, h4, p, a, label {
-    font-family: ".SF NS", Helvetica;
+    font-family: ".SF NS", Helvetica, sans-serif;
     color: #222;
 }
 
@@ -67,18 +67,17 @@ h1, h2, h3, h4, p, a, label {
 }
 
 .insert {
-    padding: 20px 0px 65px 0px;
+    padding: 20px 0 65px 0;
     border: 3px dotted #eee;
 }
 
-.insert .input-public-address {
+.insert .input-address {
     width: 500px;
     height: 30px;
     border: 2px solid #ddd;
 }
 
 form button {
-    height: 80px;
     height: 36px;
     border: 2px solid #ddd;
     cursor: pointer;
