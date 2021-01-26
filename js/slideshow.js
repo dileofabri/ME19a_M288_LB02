@@ -1,30 +1,31 @@
-var slideShowSpeed = 3;
-var captionID = "slideText";
-var $Path = "img/img-001.jpg, img/img-002.jpg, img/img-003.jpg, img/img-004.jpg";
-var $text = [
+const slideShowSpeed = 3;
+const captionID = "slideText";
+let $Path = "img/img-001.jpg, img/img-002.jpg, img/img-003.jpg, img/img-004.jpg";
+const $text = [
 
     /* 1 */
-    "rotes Kleid, CHF 99.90",
+    "schwarz/graues Kleid, CHF 99.90",
 
     /* 2 */
-    "blaues Kleid, CHF 109.90",
+    "schwarzes Kleid, CHF 109.90",
 
     /* 3 */
-    "schwarzes Kleid, CHF 79.90",
+    "Jeans Kleid, CHF 79.90",
 
     /* 4 */
-    "grünes Kleid, CHF 89.90"
+    "rotes Kleid, CHF 89.90"
 ];
-var count = 0;
-var textCount = 0;
-var $images, $img;
-var runSlideShow;
-    $images = [ ];
-    $Path = (( $Path.split) ? $Path.split(/[\,\s]+/) : $Path.match(/[\w\d]+(?:\.\w+)/g ));
+let count = 0;
+let textCount = 0;
+let $images, $img;
+let runSlideShow;
+$images = [ ];
+    $Path = (( $Path.split) ? $Path.split(/[,\s]+/) : $Path.match(/[\w\d]+(?:\.\w+)/g ));
+document.layers = undefined;
 runSlideShow = function() {
     (( count === $Path.length ) ? count = 0 : count );
     (( textCount === $text.length ) ? textCount = 0 : textCount );
-    $div = (( document.all ) ? document.all[ captionID ] : (( document.getElementById ) ? document.getElementById( captionID ) : document.layers[ captionID ] ));
+    let $div = ((document.all) ? document.all[captionID] : ((document.getElementById) ? document.getElementById(captionID) : document.layers[captionID]));
     $img = (( document.images ) ? document.images.slideShow : (( document.getElementById ) ? document.getElementById("slideShow") : (( document.layers ) ? document.layers.slideShow : document.all.slideShow )));
     if ( document.images ) {
         if ( $img.style.filter ) { // Exception for some browser's that do not understand image filtration. Just making sure that whole thing will still, work with or without images filtration support.

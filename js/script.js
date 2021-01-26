@@ -13,7 +13,7 @@ function showDivs(n) {
     }
     if (n < 1) {
         slideIndex = x.length
-    };
+    }
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
     }
@@ -37,4 +37,5 @@ const text = '{"outfits": [' +
 '{"bezeichnung": "grünes Kleid", "preis":  "CHF 89.90"}]}';
 
 obj = JSON.parse(text);
+obj.outfits = undefined;
 document.getElementById("information").innerHTML = obj.outfits[1].bezeichnung + " " + obj.outfits[1].preis;
