@@ -1,8 +1,5 @@
-function setColor() {
+function chooseColor() {
     let selectedColor = document.getElementById('input').value;
-    changeColor(selectedColor);
-}
-
-function changeColor() {
-    document.body.style.backgroundColor;
+    document.body.style.backgroundColor = selectedColor;
+    location.reload();
 }
