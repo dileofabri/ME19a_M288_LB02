@@ -89,3 +89,9 @@ form button {
     padding: 50px;
     border: 3px dotted #eee;
 }
+
+.mySlides {
+    width: 30%;
+    margin-left: 33%;
+    padding: 20px;
+}
