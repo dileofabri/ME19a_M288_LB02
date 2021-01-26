@@ -1,0 +1,8 @@
+{
+  "outfits": [
+    {"bezeichnung": "rotes Kleid", "preis":  "CHF 99.90"},
+    {"bezeichnung": "blaues Kleid", "preis":  "CHF 109.90"},
+    {"bezeichnung": "schwarzes Kleid", "preis":  "CHF 79.90"},
+    {"bezeichnung": "grünes Kleid", "preis":  "CHF 89.90"}
+  ]
+}
