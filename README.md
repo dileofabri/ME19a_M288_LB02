@@ -2,11 +2,7 @@
 Das ist mein Repository zu meiner Leistungsbeurteilung zum Modul 288.
 
 ## Projektbeschreibung
-Bei diesem Projekt geht es um eine Webapp, bei der man Public Adressen in der Blockchain generieren kann. Man kann auch
-die eigenen bestehenden Adressen importieren und sich den Kontostand ermitteln lassen.
+Bei diesem Projekt geht es um eine Webapp für ein Modegeschäft. Man kann darin Kleidungsstücke durchstöbern.
 
 ## Gebrauchsanleitung
-Hier kommt Text.
-
-## Komponenten
-Hier kommt Text.
+Links finden Sie ein Menü. In der Slideshow finden Sie die Produktbezeichnung und der Preis.
